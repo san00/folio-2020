@@ -6,5 +6,9 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-emotion'],
-}
+  siteMetadata: {
+    title: 'Sans portfolio',
+    description: 'The portfolio site of sancodes, the front end dev.',
+  },
+  plugins: ['gatsby-plugin-emotion', 'gatsby-plugin-react-helmet'],
+};
