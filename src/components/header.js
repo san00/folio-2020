@@ -14,8 +14,22 @@ const NavLink = styled(Link)`
 `;
 
 const Header = () => (
-  <header>
+  <header
+    css={css`
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem calc((100vw - 700px - 0.5rem) / 2);
+    `}
+  >
     <NavLink to="/">FOLIO 2020</NavLink>
+    <nav
+      css={css`
+        margin-top: 0;
+      `}
+    >
+      <NavLink to="/">home</NavLink>
+      <NavLink to="/about/">about</NavLink>
+    </nav>
   </header>
 );
 
